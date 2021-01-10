@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yeon Sung', cursive;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #36d1dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#titleContainer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#pointsContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointsTitle{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.pointsNumber{
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+#playContainer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.games{
+    background: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#winLose{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#winLoseTitle{
+    font-size: 45px;
+}
+
+.gameTitle{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px white;
+}
+
+.playerChosen{
+    width: 300px;
+    height: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#buttonChoose{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose{
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    font-size: 40px;
+    border-radius: 15px;
+    background: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+}
+
+.choose:hover{
+    animation: buttonBackground 0.5s ease forwards;
+}
+
+
+
+@keyframes buttonBackground {
+    from{
+        background: rgb(10, 10, 10);
+    }
+    to{
+        background: rgba(10, 10, 10, 0.8);
+    }
+}
+
+@media screen and (max-width: 1054px){
+    #winLoseTitle{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 930px){
+   
+    
+    
+    
+    #playContainer{
+        height: 400px;
+    }
+    
+    .games{
+        width: 250px;
+    }
+    
+   
+
+   
+    #winLoseTitle{
+        font-size: 30px;
+    }
+     .del{
+        display: none;
+    }
+    .gameTitle{
+        width: 250px;
+    }
+    
+    
+ 
+}
+
+@media screen and (max-width: 630px){
+    
+
+     h1{
+         font-size: 30px;
+     }
+
+     #playContainer{
+         width: 100%;
+        height: 300px;
+    }
+    
+    .pointsTitle{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    
+    .pointsNumber{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    #playContainer{
+        height: 200px;
+    }
+    .games{
+        width: 100px;
+        height: 100px;
+    }
+    
+    #winLose{
+        width: auto;
+        height: 200px;
+    
+    }
+    
+    .gameTitle{
+        width: 100px;
+        font-size: 20px;
+    }
+    
+    .playerChosen{
+        width: 300px;
+        height: 200px;
+        font-size: 20px;
+    }
+    
+    #buttonChoose{
+        height: 100px;
+
+    }
+    
+    .choose{
+        height: 40px;
+        width: 120px;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    
+   
+  
+}
+
